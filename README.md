@@ -23,4 +23,4 @@ This project repository contains solutions to several classic computer science p
 
 ## Usage
 
-Each project is organized into its own directory, containing the source code files and, where applicable, accompanying documentation or README files explaining the concepts and implementation details. You can navigate to each project's directory to explore the solutions and try them out in your preferred programming language.
+Each project is organized into its own directory, containing the source code files and, where applicable, accompanying documentation or README files explaining the concepts and implementation details.
