@@ -12,15 +12,17 @@ class CompressedGene(object):
 		self.bit_string: int = 1 # sentinel
 		for nucleotide in gene.upper():
 			self.bit_string <<= 2
-			if nucleotide == "A":
-				self.bit_string |= 0b00
-			elif nucleotide == "C": # change last two bits to 01
-				self.bit_string |= 0b01
-			elif nucleotide == "G": # change last two bits to 10
-				self.bit_string |= 0b10
-			elif nucleotide == "T": # change last two bits to 11
-				self.bit_string |= 0b11
-			else:
+			try:
+				match nucleotide:
+					case "A":
+						self.bit_string |= 0b00
+					case"C": # change last two bits to 01
+						self.bit_string |= 0b01
+					case "G": # change last two bits to 10
+						self.bit_string |= 0b10
+					case "T": # change last two bits to 11
+						self.bit_string |= 0b11
+			except nucleotide not in ['A', 'B', 'C', 'D']:			
 				raise ValueError("Invalid Nucleotide:{}".format(nucleotide))
 
 
