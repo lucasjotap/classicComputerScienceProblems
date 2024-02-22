@@ -1,4 +1,4 @@
-# Classic Computer Science Projects
+# Classic Computer Science Problems
 
 ## Introduction
 
