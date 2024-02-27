@@ -2,11 +2,13 @@ from stack import Stack
 from typing import NoReturn
 class Hanoi:
 	
-	def hanoi(self, \
-		begin: Stack[int], \
-		end: Stack[int], \
-		temp: Stack[int], \
-		n: int) -> NoReturn:
+	def hanoi(		
+				self, \
+				begin: Stack[int], \
+		   		end: Stack[int], \
+		   		temp: Stack[int], \
+				n: int) \
+				-> NoReturn:
 
 		if (n == 1):
 			end.push(begin.pop())

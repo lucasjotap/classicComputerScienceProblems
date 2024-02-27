@@ -3,7 +3,7 @@ from stack import Stack
 class Tower(Stack):
 
 	def __init__(self):
-		self.num_discs: int = 3
+		self.num_discs: int = 20
 		self.tower_a: Stack[int] = Stack()
 		self.tower_b: Stack[int] = Stack()
 		self.tower_c: Stack[int] = Stack()
