@@ -7,8 +7,8 @@ class Hanoi:
 				begin: Stack[int], \
 		   		end: Stack[int], \
 		   		temp: Stack[int], \
-				n: int) \
-				-> NoReturn:
+				n: int
+			) -> NoReturn:
 
 		if (n == 1):
 			end.push(begin.pop())
