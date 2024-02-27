@@ -1,6 +1,4 @@
-from dataclasses import dataclass
 
-@dataclass
 class PieCalculator:
 
 	@staticmethod
@@ -17,4 +15,4 @@ class PieCalculator:
 		return pi
 
 if __name__ == "__main__":
-	print(PieCalculator.calculate_pi(1000000000000000000))
+	print(PieCalculator.calculate_pi(1000000))
