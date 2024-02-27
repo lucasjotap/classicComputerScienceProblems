@@ -3,11 +3,11 @@ from typing import NoReturn
 class Hanoi:
 	
 	def hanoi(		
-				self, \
-				begin: Stack[int], \
-		   		end: Stack[int], \
-		   		temp: Stack[int], \
-				n: int
+			self, \
+			begin: Stack[int], \
+	   		end: Stack[int], \
+	   		temp: Stack[int], \
+			n: int
 			) -> NoReturn:
 
 		if (n == 1):
